@@ -18,7 +18,7 @@ class Demo{
 
                         int[] arr= new int[size];
 
-                        int max=-999999999;
+                        int max= arr[0];
 
                         System.out.println("enter integer elements in array");
 

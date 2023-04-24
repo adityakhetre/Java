@@ -1,10 +1,8 @@
-//WAP to find the common elements between two arrays.
-//Input :
-//Enter first array : 1 2 3 5
-//Enter Second array: 2 1 9 8
-//Output: Common elements :
-//1
-//2
+//Write a Java program to merge two given arrays.
+//Array1 = [10, 20, 30, 40, 50]
+//Array2 = [9, 18, 27, 36, 45]
+//Output :Merged Array = [10, 20, 30, 40, 50, 9, 18, 27, 36, 45]
+//Hint: you can take 3rd array
 
 import java.io.*;
 
@@ -14,7 +12,7 @@ class Demo{
 
 		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 
-		System.out.print("enter size of array1: ");
+		System.out.print("enter array1 size: ");
 
 		int size1= Integer.parseInt(br.readLine());
 
@@ -27,7 +25,7 @@ class Demo{
 			arr1[i]= Integer.parseInt(br.readLine());
 		}
 
-		System.out.print("enter size of array2: ");
+		System.out.print("enter array2 size: ");
 
                 int size2= Integer.parseInt(br.readLine());
 
@@ -40,21 +38,26 @@ class Demo{
                         arr2[i]= Integer.parseInt(br.readLine());
                 }
 
-		System.out.println("commen elements: ");
+		int size3= size1+size2;
 
-		for(int i=0;i<arr1.length;i++)
+		int[] arr3= new int[size3];
+
+		System.out.println("merged array: ");
+
+		for(int i=0;i<arr3.length;i++)
 		{
-			for(int j=0;j<arr2.length;j++)
+			if(i<arr1.length)
 			{
-				if(arr1[i]==arr2[j])
-				{
-				System.out.println(arr1[i]);
-				break;
-				}
+				arr3[i]=arr1[i];
 			}
+			else
+			{
+				arr3[i]=arr2[i-arr1.length];
+			}
+			
+			System.out.println(arr3[i]);
 		}
 	}
 }
-
-
+		
 

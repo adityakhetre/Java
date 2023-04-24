@@ -18,7 +18,7 @@ class Demo{
 
                         int[] arr= new int[size];
 
-                        int min=999999999;
+                        int min=arr[0];
 
                         System.out.println("enter integer elements in array");
 
