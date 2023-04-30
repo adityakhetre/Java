@@ -1,4 +1,5 @@
 /*write a program to print the following pattern
+ *
  *C2W10
  *C2W9 C2W8
  *C2W7 C2W6 C2W5

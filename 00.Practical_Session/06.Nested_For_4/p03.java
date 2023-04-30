@@ -1,4 +1,5 @@
 /*write a program to print the following pattern
+ *
  *10
  *10 9
  *9 8 7

@@ -1,4 +1,5 @@
 /*write a program to print the following pattern
+ *
  *F
  *E 1
  *D 2 E
