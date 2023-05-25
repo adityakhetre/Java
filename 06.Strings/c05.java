@@ -11,5 +11,7 @@ class Demo{
 		System.out.println(s1 == s2);				//compares idhashcode of s1 & s2 ( == )
 
 		System.out.println(s1.equals(s2));			//compares text in string
+
+		System.out.println(s1.compareTo(s2));
 	}
 }

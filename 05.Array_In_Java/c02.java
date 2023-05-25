@@ -8,14 +8,15 @@ class Demo{
 		arr[0]=10;
 	        arr[2]=20;		
 
-	System.out.println(arr[0]);
-	System.out.println(arr[2]);
-	 System.out.println(arr[1]);
-	/*	System.out.println(arr[1]);
+		System.out.println(arr[0]);
 		System.out.println(arr[2]);
-		System.out.println(arr[3]);
-		System.out.println(arr[4]);
-*/
+	 	System.out.println(arr[4]);
+
+		/* System.out.println(arr[1]);
+		 * System.out.println(arr[2]);
+		 * System.out.println(arr[3]);
+		 * System.out.println(arr[4]);		//runtime exception arrayIndexOutOfBoundsException
+		 */
 	}
 }
 
